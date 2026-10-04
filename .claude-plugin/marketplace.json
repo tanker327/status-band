@@ -1,0 +1,17 @@
+{
+  "name": "status-band",
+  "description": "Claude Code plugins by tanker327.",
+  "owner": {
+    "name": "Eric",
+    "url": "https://github.com/tanker327"
+  },
+  "plugins": [
+    {
+      "name": "status-band",
+      "source": "./",
+      "description": "A band above the prompt: context forecast, prompt-cache timer with auto-compact, usage pace, and git state.",
+      "version": "0.1.0",
+      "license": "MIT"
+    }
+  ]
+}

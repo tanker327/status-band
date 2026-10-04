@@ -1,0 +1,40 @@
+{
+  "name": "status-band",
+  "version": "0.1.0",
+  "description": "A band above the prompt: context forecast, prompt-cache timer with auto-compact, usage pace, and git state.",
+  "author": {
+    "name": "Eric",
+    "url": "https://github.com/tanker327"
+  },
+  "homepage": "https://github.com/tanker327/status-band",
+  "repository": "https://github.com/tanker327/status-band",
+  "license": "MIT",
+  "keywords": [
+    "status",
+    "context",
+    "prompt-cache",
+    "usage",
+    "git"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "models": {
+      "type": "string",
+      "title": "Models in the picker",
+      "description": "Comma-separated names the model picker offers, each as /model takes it.",
+      "default": "opus,sonnet,haiku,fable"
+    },
+    "cacheMinutes": {
+      "type": "number",
+      "title": "Cache lifetime (minutes)",
+      "description": "How long the prompt cache lives after a request: 60, or 5 on the short lifetime.",
+      "default": 60
+    },
+    "minCompactTokens": {
+      "type": "number",
+      "title": "Smallest context to auto-compact",
+      "description": "Auto-compact leaves a context smaller than this many tokens alone.",
+      "default": 100000
+    }
+  }
+}
